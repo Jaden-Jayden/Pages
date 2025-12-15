@@ -1,0 +1,89 @@
+body {
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	color: var(--color1);
+}
+.top {
+	background-color: #9260e8;
+}
+
+h1 {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 42px;
+	line-height: 48px;
+	letter-spacing: -0.55px;
+}
+h2 {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 48px;
+	color: var(--color1);
+	line-height: 56px;
+	letter-spacing: -0.37px;
+}
+h3 {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 26px;
+
+	line-height: 100%;
+	letter-spacing: -0.25px;
+}
+h4 {
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 18px;
+
+	line-height: 100%;
+	letter-spacing: -0.18px;
+}
+h5 {
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 14px;
+
+	line-height: 100%;
+	letter-spacing: -0.18px;
+}
+h6 {
+	font-family: Poppins;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 12px;
+
+	line-height: 100%;
+	letter-spacing: -0.18px;
+}
+:root {
+	--color: #9260e8;
+}
+:root {
+	--color1: #ffffff;
+}
+:root {
+	--color2: #48d0b7;
+}
+:root {
+	--color3: #3a3a3a;
+}
+:root {
+	--color4: #cf468d;
+}
+:root {
+	--color4: #a2a2a2;
+}
+
+.poppins-thin {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+}
