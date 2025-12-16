@@ -14,7 +14,7 @@ header {
 	background-color: var(--color);
 	padding-top: 5%;
 	padding-bottom: 5%;
-	padding: 15px;
+	padding: 50px;
 }
 nav {
 	display: none;
@@ -28,9 +28,9 @@ main {
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
-    background-color: black;
+	background-color:var(--color);
 }
-.top {
+.hero {
 	display: block;
 	flex-direction: column;
 	grid-area: f1;
@@ -39,40 +39,38 @@ main {
 	display: block;
 	text-align: left;
 	flex-direction: column;
-	padding-left: 10px;
+	padding-left: 50px;
 	padding-right: 35vh;
+	
 }
 .first {
-    width: 356px;
+	width: 356px;
 	padding-bottom: 5%;
-    
 }
-.firsttwo {
-	margin-right: 35vh;
-}
-.M {
+
+.m {
 	padding-bottom: 5%;
 	width: 365px;
 }
 .uni {
 	display: none;
-	position: sticky;
-	right: 0%;
+	position: relative;
+	right: 100%;
+	top: 50%;
 	z-index: 10;
 }
 .wave {
 	display: block;
 	width: 100%;
 	height: 96px;
+	padding-top: 5%;
+	background-color: var(--color);
 	z-index: 1;
 }
 @media screen and (width > 768px) {
 	main {
 		display: block;
-		grid-template-areas:
-			"mu"
-			"ph"
-			"te";
+		grid-template-areas: "f1";
 	}
 
 	header {
@@ -109,9 +107,8 @@ main {
 	.wave {
 		display: block;
 		position: absolute;
-		bottom: 0%;
 	}
-    .top {
-        position: relative
-    };
+	.hero {
+		position: relative;
+	}
 }
