@@ -10,7 +10,15 @@ body {
 .top {
 	background-color: #9260e8;
 }
-
+.free {
+	display: block;
+	background-color: var(--color2);
+	border: solid 5px var(--color2);
+	border-radius: 999px;
+	width: 138px;
+	size: 14px;
+	padding: 14px 12px;
+}
 h1 {
 	font-family: Poppins;
 	font-weight: 700;
@@ -66,21 +74,12 @@ h6 {
 }
 :root {
 	--color: #9260e8;
-}
-:root {
 	--color1: #ffffff;
-}
-:root {
-	--color2: #48d0b7;
-}
-:root {
-	--color3: #3a3a3a;
-}
-:root {
-	--color4: #cf468d;
-}
-:root {
-	--color4: #a2a2a2;
+--color2: #48d0b7;
+--color3: #3a3a3a;
+--color4: #cf468d;
+--color4: #a2a2a2;
+
 }
 
 .poppins-thin {

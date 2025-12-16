@@ -3,14 +3,18 @@
 	padding: 0;
 }
 
-@media  {
-    
+min {
+	display: block;
+	grid-template-areas: "f1";
+	width: 100%;
 }
 header {
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--color);
+	padding-top: 5%;
 	padding-bottom: 5%;
+	padding: 15px;
 }
 nav {
 	display: none;
@@ -22,16 +26,92 @@ main {
 	display: block;
 	margin-bottom: 0vh;
 	flex-direction: column;
+	text-align: center;
+	width: 100%;
+    background-color: black;
 }
 .top {
 	display: block;
+	flex-direction: column;
+	grid-area: f1;
+}
+.text {
+	display: block;
+	text-align: left;
+	flex-direction: column;
+	padding-left: 10px;
+	padding-right: 35vh;
 }
 .first {
+    width: 356px;
 	padding-bottom: 5%;
+    
+}
+.firsttwo {
+	margin-right: 35vh;
 }
 .M {
 	padding-bottom: 5%;
+	width: 365px;
+}
+.uni {
+	display: none;
+	position: sticky;
+	right: 0%;
+	z-index: 10;
 }
 .wave {
 	display: block;
+	width: 100%;
+	height: 96px;
+	z-index: 1;
+}
+@media screen and (width > 768px) {
+	main {
+		display: block;
+		grid-template-areas:
+			"mu"
+			"ph"
+			"te";
+	}
+
+	header {
+		align-items: center;
+	}
+
+	ul {
+		display: flex;
+		gap: 15px;
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--color1);
+	}
+	a:li {
+		color: green;
+	}
+	.thing {
+		display: none;
+	}
+	nav {
+		display: block;
+
+		flex-direction: row;
+	}
+	.uni {
+		display: block;
+		position: absolute;
+		top: 15%;
+		right: 5%;
+	}
+	.wave {
+		display: block;
+		position: absolute;
+		bottom: 0%;
+	}
+    .top {
+        position: relative
+    };
 }
