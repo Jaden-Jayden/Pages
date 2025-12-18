@@ -1,29 +1,41 @@
 body {
 	font-family: Poppins;
 	font-weight: 400;
-	font-style: Regular;
 	font-size: 16px;
 	line-height: 100%;
 	letter-spacing: 0px;
 	color: var(--color1);
 }
-.top {
-	background-color: #9260e8;
-}
+
 .free {
 	display: block;
 	background-color: var(--color2);
+	color: white;
 	border: solid 5px var(--color2);
 	border-radius: 999px;
 	width: 138px;
 	size: 14px;
 	padding: 12px 32px;
-	
+	list-style: none;
+}
+.i:hover {
+	background-color: var(--color2);
+
+	font-size: 18px;
+}
+.b:hover {
+	background-color: var(--color2);
+
+	font-size: 18px;
+}
+.c:hover {
+	background-color: var(--color2);
+
+	font-size: 18px;
 }
 h1 {
 	font-family: Poppins;
 	font-weight: 700;
-	font-style: Bold;
 	font-size: 42px;
 	line-height: 48px;
 	letter-spacing: -0.55px;
@@ -37,14 +49,33 @@ h2 {
 	line-height: 56px;
 	letter-spacing: -0.37px;
 }
+.hw {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 26px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: var(--color3);
+	padding-bottom: 2%;
+}
 h3 {
 	font-family: Poppins;
 	font-weight: 700;
 	font-style: Bold;
 	font-size: 26px;
-
 	line-height: 100%;
 	letter-spacing: -0.25px;
+}
+.hx {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: #565656;
+	padding-bottom: 2%;
 }
 h4 {
 	font-family: Poppins;
@@ -73,14 +104,71 @@ h6 {
 	line-height: 100%;
 	letter-spacing: -0.18px;
 }
+.middletop {
+	background-color: var(--color1);
+}
+.boxone {
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f2;
+}
+.boxtwo {
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f3;
+}
+.boxthree {
+	flex-direction: row;
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f4;
+}
+.titre {
+	font-family: Poppins;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: var(--color3);
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+}
+.titret {
+	font-family: Poppins;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	word-wrap: break-word;
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+}
+.p {
+	color: #cf468d;
+}
 :root {
 	--color: #9260e8;
 	--color1: #ffffff;
---color2: #48d0b7;
---color3: #3a3a3a;
---color4: #cf468d;
---color4: #a2a2a2;
-
+	--color2: #48d0b7;
+	--color3: #3a3a3a;
+	--color4: #cf468d;
+	--color4: #a2a2a2;
 }
 
 .poppins-thin {

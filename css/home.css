@@ -14,7 +14,7 @@ header {
 	background-color: var(--color);
 	padding-top: 5%;
 	padding-bottom: 5%;
-	padding: 50px;
+	padding-left: 5%;
 }
 nav {
 	display: none;
@@ -28,30 +28,29 @@ main {
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
-	background-color:var(--color);
+	background-color: var(--color);
 }
+
 .hero {
-	display: block;
+	display: flex;
 	flex-direction: column;
 	grid-area: f1;
 }
 .text {
 	display: block;
+	flex-direction: row;
 	text-align: left;
-	flex-direction: column;
-	padding-left: 50px;
-	padding-right: 35vh;
-	
+	width: 75%;
+	padding-left: 5%;
 }
 .first {
-	width: 356px;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 }
 
 .m {
 	padding-bottom: 5%;
-	width: 365px;
 }
+
 .uni {
 	display: none;
 	position: relative;
@@ -62,17 +61,66 @@ main {
 .wave {
 	display: block;
 	width: 100%;
-	height: 96px;
 	padding-top: 5%;
 	background-color: var(--color);
 	z-index: 1;
 }
+.middletop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.boxone {
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f2;
+}
+.boxtwo {
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f3;
+}
+.boxthree {
+	flex-direction: row;
+	padding: 12px;
+	color: var(--color3);
+	width: 349px;
+	text-align: left;
+	padding-bottom: 2vh;
+	gap: 12px;
+	background-color: var(--color1);
+	grid-area: f4;
+}
+.middledown {
+	display: flex;
+	background-color: var(--color1);
+	text-align: left;
+	flex-direction: column;
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: black;
+}
+.imgw {
+	display: flex;
+	margin: auto;
+}
 @media screen and (width > 768px) {
 	main {
-		display: block;
+		display: flex;
 		grid-template-areas: "f1";
 	}
-
 	header {
 		align-items: center;
 	}
@@ -87,9 +135,6 @@ main {
 		text-decoration: none;
 		color: var(--color1);
 	}
-	a:li {
-		color: green;
-	}
 	.thing {
 		display: none;
 	}
@@ -97,6 +142,12 @@ main {
 		display: block;
 
 		flex-direction: row;
+	}
+	.hero {
+		position: relative;
+	}
+	.text {
+		width: 40%;
 	}
 	.uni {
 		display: block;
@@ -107,8 +158,108 @@ main {
 	.wave {
 		display: block;
 		position: absolute;
+		bottom: 0%;
+		top: 100%;
 	}
-	.hero {
-		position: relative;
+
+	.middletop {
+		display: flex;
+		padding-top: 25%;
+		flex-direction: column;
+		justify-items: normal;
+	}
+	.boxone {
+		padding: 12px;
+		color: var(--color3);
+		width: 349px;
+		text-align: left;
+		padding-bottom: 2vh;
+		gap: 12px;
+		background-color: var(--color1);
+		grid-area: f2;
+		width: 50%;
+	}
+	.boxtwo {
+		padding: 12px;
+		color: var(--color3);
+		width: 349px;
+		text-align: left;
+		padding-bottom: 2%;
+		gap: 12px;
+		background-color: var(--color1);
+		grid-area: f3;
+		width: 50%;
+	}
+	.boxthree {
+		flex-direction: row;
+		padding: 12px;
+		color: var(--color3);
+		width: 349px;
+		text-align: left;
+		padding-bottom: 2vh;
+		gap: 12px;
+		background-color: var(--color1);
+		grid-area: f4;
+		padding-left: 6%;
+	}
+	.onetwo {
+		display: flex;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 5%;
+	}
+	.middletop {
+		display: flex;
+		background-color: var(--color1);
+		text-align: left;
+		flex-direction: row;
+		padding-top: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
+		color: black;
+	}
+	.imgw {
+	display: flex;
+	margin: none;
+}
+	.AI{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: right;
+	}
+}
+@media screen and (width > 1100px) {
+	main {
+		grid-template-areas:
+			"f1"
+			"f2 f3 f4";
+	}
+	.middletop {
+		display: grid;
+		padding-top: auto;
+		justify-content: center;
+		justify-content: space-between;
+	}
+	.boxone {
+		display: block;
+		width: 349px;
+		text-align: left;
+	}
+	.boxtwo {
+		width: 349px;
+		text-align: left;
+	}
+	.boxthree {
+		width: 400px;
+		text-align: left;
+	}
+	.onetwo {
+		width: none;
+		padding: none;
+	}
+	.box {
+		display: flex;
+		align-items: center;
 	}
 }
