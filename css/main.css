@@ -33,6 +33,9 @@ body {
 
 	font-size: 18px;
 }
+p{
+	color: var(--color3);
+}
 h1 {
 	font-family: Poppins;
 	font-weight: 700;
@@ -160,6 +163,7 @@ h6 {
 	padding-top: 2vh;
 }
 .p {
+	text-decoration: none;
 	color: #cf468d;
 }
 :root {
