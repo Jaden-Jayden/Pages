@@ -105,7 +105,6 @@ main {
 	flex-direction: row;
 	padding: 12px;
 	color: var(--color3);
-	
 	text-align: left;
 	gap: 12px;
 	background-color: var(--color1);
@@ -239,9 +238,9 @@ main {
 .reason.register{
 	display: block;
 	width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  box-sizing: border-box;
+	padding: 12px;
+	margin: 10px 0;
+	box-sizing: border-box;
 }
 .downtoop{
 	padding-left: 10%;
